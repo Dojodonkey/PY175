@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2>{{ name }}</h2>
+    {% for key, value in user.items() %}
+        <ul>
+            <li>
+                {{ key }}
+                <ul>
+                    {% if value is not string %}
+                        {% for item in value %}
+                    <li>
+                        {{ item }}
+                    </li>
+                        {% endfor %}
+                    {% else %}
+                    <li>
+                        {{ value }}
+                    </li>
+                    {% endif %}
+                </ul>
+            </li>
+        </ul>
+    {% endfor %}
+    <h3>Other Users</h3>
+        <ul>
+            {% for other in users %}
+                {% if other != name %}
+                <li>
+                    <a href="{{ url_for('user', name=other) }}">{{ other }}</a>
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+{% endblock %}

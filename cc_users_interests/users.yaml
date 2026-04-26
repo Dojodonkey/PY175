@@ -1,0 +1,21 @@
+jamy:
+  email: jamy.rustenburg@gmail.com
+  interests:
+    - woodworking
+    - cooking
+    - reading
+nora:
+  email: nora.alnes@yahoo.com
+  interests:
+    - cycling
+    - basketball
+    - economics
+hiroko:
+  email: hiroko.ohara@hotmail.com
+  interests: []
+brett:
+  email: brett.nakamoto@gmail.com
+  interests:
+    - jiu jitsu
+    - paddle tennis
+    - musik curation
